@@ -1,0 +1,98 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+폰트설정 */
+*{margin: 0; padding: 0;}
+body{font-size: 12px;
+     color: #333;
+     /* font-family: "맑은고딕";*/} 
+img{border:0;}
+ul,li{list-style: none;}
+a:link{text-decoration: none;
+       color: #333;}
+a:hover{color: #000;}
+a:active{color:#000}
+a:visited{color: #333;}
+
+
+
+
+/*위 아이콘*/
+
+#up_box{position: fixed; display: none; float: right;  top: 50%; margin-top: -12px; left: 90%;  z-index: 9999;} 
+#up{margin: 0 auto;}
+
+
+
+
+
+/* 헤더 */
+
+.header{position: fixed; width: 100%; top: 0;opacity: 0.8; z-index: 9999;  float: left;}
+#header_top{margin: 0 auto; position: relative; width: 1000px;  height: 80px;}
+#header_top .logo{float: left; position: absolute; top: 30px; left: 20px;
+                  font-size: 20px;}
+#header_top .go_btn{float: right;}
+#header_top .go_btn li{float: left; margin: 30px;}
+#header_top .go_btn li a{font-size: 16px; font-weight: 600;}
+
+
+
+
+
+/*메인*/
+#main{position: relative; margin: 0 auto; margin-bottom:100px; width: 1000px; height: 800px; margin-bottom: 100px;}
+#main video{position: absolute; width: 1000px;top: 20%; left: 20%;z-index: -1;}
+#main_name{position: absolute;   top: 15%; font-size: 50px;
+     height: 560px;
+     }
+.text{display:inline;}     
+.blink {animation: blink 0.5s infinite;}
+@keyframes blink {
+     to {opacity: 0;}
+}
+
+
+    
+
+/* about */
+#about_bg{width: 100%; background: rgb(243, 250, 147); margin-bottom:100px;padding: 100px 0 100px ;}
+#about{position: relative; margin: 0 auto; width: 1000px; height: 600px;}
+#about_ttl{position: absolute; font-size: 200px;line-height: 200px;  display: inline; top: 50%; left: 50%; margin-top: -100px;margin-left: -343.07px; }
+#about .sub_title{position: absolute; font-family: 700; font-size: 35px;
+     padding:20px 0 0 50px; top: 15%; left: 50%; margin-left:-85.04px;}
+#about img{position: absolute; top:50%; margin-top:-145.5px;left: 20%;}
+#info{position: absolute; display: block;float: right;top: 50%; margin-top:-81px; left: 55%;}
+#info ul li{font-size: 20px;}
+
+
+
+
+
+/*skill*/
+#skill_bg{width: 100%; padding: 0 20px 0 20px; margin-bottom: 100px;}
+#skill{position: relative;  margin: 0 auto; width: 1000px; height: 800px; border-radius: 1rem;
+       }
+#skill_ttl{position: absolute; font-size: 200px;line-height: 200px;  display: inline; top: 50%; left: 50%; margin-top: -100px;margin-left: -254.545px;}
+#skill .sub_title{position: absolute; font-family: 700; font-size: 35px;
+      top: 15%; left: 50%; margin-left:-69.545px;}
+#skill .skill_img{position: absolute; width: 1000px; top: 40%; display:flex; justify-content: space-between; margin: 0 auto;}
+
+
+
+/*project*/
+#project_bg{width: 100%; background-color: paleturquoise; margin-bottom: 100px;}
+#project{position: relative; margin: 0 auto; width: 1000px; height: 800px;}
+#project_ttl{position: absolute; font-size: 200px;line-height: 200px;  display: inline; top: 50%; left: 50%; margin-top: -100px;margin-left: -423.54px;}
+#project .sub_title{position: absolute; font-family: 700; font-size: 35px;
+      top: 15%; left: 50%; margin-left:-99.125px;}
+#project .project_box{position: relative; float: left; margin: 0 auto;  width:1000px;height: 800px;padding: 300px 0 0 75px;box-sizing: border-box;}
+#project .project_img{width: 400px; height: 300px;margin-right: 50px; float: left;top: 30%; border-radius: 1rem; background-color: white;}
+#project .project_img:last-child{margin-right: 0;}
+
+    
+
+/*footer*/
+#footer{ margin: 0 auto; width:100%;height: 100px;  background-color:rgba(0, 0, 0, 0.829); }
+#footer_inbox{ box-sizing: border-box; padding: 20px 0; margin: 0 auto; width:1000px; height: 100px; color: white;    
+}
+#footer_inbox h2{font-size: 20px; text-align: center;}
+#footer_inbox p{ text-align: center;}
