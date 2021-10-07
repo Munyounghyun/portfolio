@@ -9,13 +9,13 @@
     <script src="js/topMenu.js"></script>
     <script src="js/section.js"></script>
     <script src="js/scroll.js"></script>
-    <script src="js/up_down.js"></script>
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/jquery-migrate-1.js"></script>
     <script src="https://kit.fontawesome.com/b3187be5e2.js" crossorigin="anonymous"></script>
+    
 
     <title>MYH's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="css/layout.css?ver=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1">
 </head>
 <body>
     <div id="all">
@@ -23,9 +23,9 @@
             <div id="header_top">
                 <h2 class="logo"><a href="#">MYH's Portfolio</a></h2>
                 <ul class="go_btn">
-                    <li><a href="#about">ABOUT</a> </li>
-                    <li><a href="#skill">SKILL</a> </li>
-                    <li><a href="#project">PROJECT</a> </li>
+                    <li><a href="#">ABOUT</a> </li>
+                    <li><a href="#">SKILL</a> </li>
+                    <li><a href="#">PROJECT</a> </li>
                 </ul>
             </div>
         </header>
@@ -39,17 +39,16 @@
                 <h3 class="text"></h3><span class="blink">|</span>
             </article>
 
-            
+            <div id="up_box">
+                <a href="#"><i class="fas fa-angle-double-up fa-3x" id="up"></i></a>
+            </div>
         </section>
 
-        <div id="up_box">
-            <i class="fas fa-angle-up fa-2x" id="up"></i>
-            <h3>top</h3>
-        </div>
+        
 
 
         
-        <section id="about_bg">
+        <section id="about_bg" class="bg">
             <section id="about">
                 <h4 id="about_ttl">ABOUT</h4>
                 <article id="about_all">
@@ -71,7 +70,7 @@
             
         </section>  
 
-        <section id="skill_bg">
+        <section id="skill_bg" class="bg">
             <section id="skill">
                 <h4 id="skill_ttl">SKILL</h4>
                 <article id="skill_all">
@@ -87,7 +86,7 @@
             </section>
         </section>
 
-        <section id="project_bg">
+        <section id="project_bg" class="bg">
             <section id="project">
                 <h4 id="project_ttl">PROJECT</h4>
                 <article id="project_all">

@@ -9,4 +9,4 @@ $( document ).ready( function() {
         $( '.header' ).removeClass( 'header_Fixed' );
       }
     });
-  } );
+  });

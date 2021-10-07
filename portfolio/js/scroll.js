@@ -31,7 +31,7 @@ $(document).ready(function(){
         function(event){
            event.preventDefault();
            var tt=$("#all").offset().top;
-           $('html, body').stop().animate({scrollTop:tt});
+           $('html, body').stop().animate({scrollTop:tt});          
         }
     )
      
