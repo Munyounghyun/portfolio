@@ -81,13 +81,17 @@ a:visited{color: #333;}
 
 /*project*/
 #project_bg{width: 100%; background-color: paleturquoise; margin-bottom: 100px;}
-#project{position: relative; margin: 0 auto; width: 52%; height: 800px;}
+#project{position: relative; margin: 0 auto; width: 52%; height: 1000px;}
 #project_ttl{position: absolute; font-size: 200px;line-height: 200px;  display: inline; top: 50%; left: 50%; margin-top: -100px;margin-left: -423.54px;}
 #project .sub_title{position: absolute; font-family: 700; font-size: 35px;
       top: 15%; left: 50%; margin-left:-99.125px;}
-#project .project_box{position: relative; float: left; margin: 0 auto;  width:1000px;height: 800px;padding: 300px 0 0 75px;box-sizing: border-box;}
-#project .project_img{width: 400px; height: 300px;margin-right: 50px; float: left;top: 30%; border-radius: 1rem; background-color: white;}
-#project .project_img:last-child{margin-right: 0;}
+#project .project_box{position: relative; float: left; margin: 0 auto;  width:100%;height: 800px;padding-top:15rem; box-sizing: border-box;}
+
+#project .project_img{display: flex; justify-content: space-between;margin-bottom: 20px;  width: 100%; height: 300px; background-color: wheat; }
+/* #project .project_img{width: 400px; height: 300px;margin-right: 50px; float: left;top: 30%; border-radius: 1rem; background-color: white;}
+#project .project_img:last-child{margin-right: 0;} */
+#project .project_info{width: 50%; padding:2rem 0.5rem 2rem 4rem;}
+
 
     
 
@@ -99,24 +103,66 @@ a:visited{color: #333;}
 #footer_inbox p{ text-align: center;}
 
 
+
+
+
+
+
+
+/*반응형*/
 @media(max-width:1600px){
      #all{width: 100%;}
+     #about #info li{right: 0; width: 352.5px;}
+
 }
 @media(max-width:1024px){
      #all{width: 100%}
-     #header_top{width: 550px;}
-     #main video{width: 900px;}
+     #header_top{width: 700px;}
+     #header_top .logo{margin-left: 70px; font-size: 20px;}
+     #header_top .go_btn li a{font-size:18px}
+     #main video{width: 900px; left: 0;}
      #about{width: 75%; display: flex; justify-content: space-between;}
-     #info ul li{font-size: 18px;}
-     
+     #about_ttl{font-size: 150px; left: 50%; margin-left: -257.305px;}
+     #about #info li{font-size: 16px; width: 320px;}
+     #skill_ttl{font-size: 150px; left: 50%; margin-left: -190.905px;}
+
      #skill .skill_img{width: 700px; margin-left: -350px;}
+     #project_ttl{font-size: 150px; left: 50%; margin-left: -316.01px;}
+     #info ul li{font-size: 18px;}    
+     
+     #main_name{font-size:3.5vw;}
+    
+
 }
+
+
 @media(max-width:800px){
-     #all{width: 100%;}
+     #all{width: 100%; overflow: hidden;}
+
+     #header_top{width:100%;}
+     #header_top .logo{font-size: 16px;}
+     #header_top .go_btn li a{font-size:14px}
+     #header_top .go_btn li{margin: 5px; margin-top: 25px;}
      #main video{width: 600px;}
+     #main_name{font-size: 3vw;}
+     .logo{margin-left: 140px;}
+     #about{display: block;}
+     #about img{left: 30px;}
+     #about #info{right: 0;}
+     #about #info li{right: 0; width: 320px;}
 }
 @media(max-width:480px){
-     #all{width: 100%;}
-     #main video{display: none;}
+     #all{min-width: 480px; overflow: hidden;}
+
+     #main{height: 500px;margin: 0; }
+     #main_name{font-size: 35px;}
+     #header_top{width: 450px; display: flex; justify-content: space-between;}
+     #header_top .logo{margin:0; top: 25px; left: 45px;}
+     #main_name{top: 35%; width:400px;left:50px;}
+
+     #main video{display: none !important;}
+     #about_all{display: flex;flex-wrap: wrap;}
+
+     
      
 }

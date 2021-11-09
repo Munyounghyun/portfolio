@@ -55,12 +55,12 @@ $(document).ready(function(){
 
     if(rollIt4){ 
             setTimeout(function(){
-                $("#up_box").fadeIn(1000);
-            },1000);
+                $("#up_box").fadeIn(200);
+            },300);
         }else{
             setTimeout(function(){
-                $("#up_box").fadeOut();
-             },1000);
+                $("#up_box").fadeOut(100);
+             },310);
         }
      
         

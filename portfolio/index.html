@@ -11,22 +11,30 @@
     <script src="js/scroll.js"></script>
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/jquery-migrate-1.js"></script>
+    <script src="js/needpopup.min.js"></script>
+    <script src="js/needpopup.js"></script>
     <script src="https://kit.fontawesome.com/b3187be5e2.js" crossorigin="anonymous"></script>
     
 
     <title>MYH's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/style.css?ver=1">
+    <link rel="stylesheet" type="text/css" href="css/needpopup.css?ver=1">
+    <link rel="stylesheet" type="text/css" href="css/icon.css?ver=1">
 </head>
 <body>
     <div id="all">
         <header class="header">
             <div id="header_top">
-                <h2 class="logo"><a href="#">MYH's Portfolio</a></h2>
-                <ul class="go_btn">
-                    <li><a href="#">ABOUT</a> </li>
-                    <li><a href="#">SKILL</a> </li>
-                    <li><a href="#">PROJECT</a> </li>
-                </ul>
+                <div>
+                    <h2 class="logo"><a href="#">MYH's Portfolio</a></h2>
+                </div>
+                <div>
+                    <ul class="go_btn">
+                        <li><a href="#">ABOUT</a> </li>
+                        <li><a href="#">SKILL</a> </li>
+                        <li><a href="#">PROJECT</a> </li>
+                    </ul>
+                </div>
             </div>
         </header>
 
@@ -76,11 +84,21 @@
                 <article id="skill_all">
                     <h3 class="sub_title">SKILL</h3>
                     <div class="skill_img">
+                        <div>
                         <img src="images/html.png" alt="html이미지입니다.">
+                        </div>
+                        <div>
                         <img src="images/css.png" alt="css이미지입니다.">
+                        </div>
+                        <div>
                         <img src="images/javascript.png" alt="javascript이미지입니다.">
+                        </div>
+                        <div>
                         <img src="images/jquery.png" alt="jquery이미지입니다.">
+                        </div>
+                        <div>
                         <img src="images/node.png" alt="node이미지입니다.">
+                        </div>
                     </div>
                 </article>
             </section>
@@ -92,16 +110,23 @@
                 <article id="project_all">
                     <h3 class="sub_title">PROJECT</h3>
                     <div class="project_box">
-                        <div class="project_img">
-                            <img src="#" alt="#">
-                            <ul>
+                        <div class="project_img" id="project1">
+                            <div class="popup_btn hvr-underline-from-center">
+                                <a href="#" data-needpopup-show="#custom-popup1"><img src="#" alt="#"></a>
+                            </div>
+                            <div class="needpopup" id="custom-popup1" data-needpopup-options="custom">
+                                <img width="900" src="#">
+                            </div>
+                            <ul class="project_info">
                                 <li>설명</li>
+                                <li>링크</li>
                             </ul>
                         </div>
-                        <div class="project_img">
+                        <div class="project_img" id="project2">
                             <img src="#" alt="#">
-                            <ul>
+                            <ul class="project_info">
                                 <li>설명</li>
+                                <li>링크</li>
                             </ul>
                         </div>
                     </div>
